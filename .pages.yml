@@ -1,0 +1,22 @@
+media:
+  input: public
+  output: /
+
+content:
+  - name: docs
+    label: Docs
+    path: src/content/docs
+    type: collection
+    view:
+      fields: [title, description]
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
