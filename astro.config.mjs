@@ -4,8 +4,10 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://thepetrfreys.github.io',      // корень GitHub Pages
-  base: '/thebalticwind-docs',                 // имя репозитория
+  // ВАЖНО: эти две строки
+  site: 'https://thepetrfreys.github.io',
+  base: '/thebalticwind-docs',
+
   integrations: [
     starlight({
       title: 'The Baltic Wind Docs',
